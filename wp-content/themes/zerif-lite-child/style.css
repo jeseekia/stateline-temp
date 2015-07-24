@@ -8,7 +8,7 @@ Template: zerif-lite
 Version: 1.0
 */
 
-@import '../zerif-lite/style.css';
+
 
 /* Other fixes*/
 *,*:before,*:after {
@@ -1387,7 +1387,7 @@ object {
     color:#404040;
 }
 .navbar-inverse .navbar-nav ul.sub-menu li:hover > a {
-    color:#db3a34;
+    color:#1891d3;
 }
 .navbar-inverse .navbar-nav li:hover > ul.sub-menu {
     display: block;
@@ -1413,13 +1413,13 @@ object {
     margin-top: 23px;
 }
 .navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus {
-    background-color: #db3a34;
+    background-color: #1891d3;
     filter: alpha(opacity=100);
     opacity: 1;
     box-shadow: none;
 }
 .navbar-toggle.active{
-    background-color: #db3a34 !important;
+    background-color: #1891d3 !important;
 }
 .navbar-toggle.collapsed{
     background-color: #808080 !important;
@@ -1458,7 +1458,7 @@ object {
     color: #1891d3;
 }
 .navbar-inverse .navbar-nav>li.current>a {
-    color: #db3a34;
+    color: #1891d3;
     position: relative;
     outline: none;
 }
@@ -1473,7 +1473,7 @@ li.current>a:before {
     content: "";
     width: 75%;
     height: 2px;
-    background: #db3a34;
+    background: #1891d3;
     bottom: 0px;
     left: 12.5%;
 }
@@ -1484,7 +1484,7 @@ ul.nav > li.current_page_item > a:before {
     content: "";
     width: 75%;
     height: 2px;
-    background: #db3a34;
+    background: #1891d3;
     bottom: 0px;
     left: 12.5%;
     display: block;
@@ -1500,7 +1500,7 @@ ul.nav > li.current_page_item.current > a:before {
     content: "";
     width: 75%;
     height: 2px;
-    background: #db3a34;
+    background: #1891d3;
     bottom: 0px;
     left: 12.5%;
     display: block;
@@ -1666,20 +1666,28 @@ ul.nav > li.current_page_item.current > a:before {
 /* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
 /* ON HOVER COLORED ROUNDED CIRCLE AROUND ICONS */
 .red,.green,.blue,.yellow {
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 .focus-box:nth-child(4n+1) .service-icon:hover {
     border: 10px solid #db3a34;
+    border-radius: 50%;
+    background-color: #db3a34;
 }
 .focus-box:nth-child(4n+2) .service-icon:hover{
     border: 10px solid #177e89;
+    border-radius: 50%;
+    background-color: #177e89;
 }
 .focus-box:nth-child(4n+3) .service-icon:hover {
     border: 10px solid #1891d3;
+    border-radius: 50%;
+    background-color: #1891d3;
 }
 .focus-box:nth-child(4n+4) .service-icon:hover{
     border: 10px solid #ffc857;
+    border-radius: 50%;
+    background-color: #ffc857;
 }
 .focus-box:nth-child(4n+1) .red-border-bottom:before {
     background: #db3a34;
@@ -4746,20 +4754,26 @@ body.custom-background {
 
 /* Custom CSS additions */
 
-div#client-feedbacks a img {
-
-    display: inline-block;
-    max-width: 100px;
-    margin: 0 auto;
-}
-
+/* StateLine large in hero section */
 span#biggy {
     margin-top: 0;
     /*color: #1891d3;*/
     font-size: 2em;
 }
-
+/* "Construction and Maintenance" slightly smaller */
 span#not-biggy {
     font-size: 1.1em;
+}
+
+/* Client logos round with gray border */
+.client-list div img {
+    margin: 10px;
+    padding: 0px;
+    border: solid #ececec 5px;
+    border-radius: 50%;
+}
+/* Client logos round with StateLine teal border on hover */
+.client-list div img:hover {
+    border-color: #1891d3;
 }
 
