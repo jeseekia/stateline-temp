@@ -331,6 +331,7 @@
 	<!-- CLIENTS -->
 	<?php
 		if(is_active_sidebar( 'sidebar-aboutus' )):
+			echo '<div class="client-section">';
 			echo '<div class="our-clients">';
 				echo '<h5><span class="section-footer-title">'.__('OUR HAPPY CLIENTS','zerif-lite').'</span></h5>';
 			echo '</div>';
@@ -340,6 +341,7 @@
 				dynamic_sidebar( 'sidebar-aboutus' );
 				echo '</div>';
 			echo '</div> ';
+			echo '</div>';
 		endif;
 	?>
 

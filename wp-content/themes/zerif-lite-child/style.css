@@ -1737,7 +1737,7 @@ ul.nav > li.current_page_item.current > a:before {
     margin-right: 8px;
 }
 /*---------------------------------------
- **   Secction:  Separator one        -----
+ **   Section:  Separator one        -----
 -----------------------------------------*/
 .separator-one {
     background: rgba(52, 210, 147, 0.8);
@@ -4741,5 +4741,25 @@ body.custom-background {
 
 .zerif-copyright-box {
     width: 100%;
+}
+
+
+/* Custom CSS additions */
+
+div#client-feedbacks a img {
+
+    display: inline-block;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+span#biggy {
+    margin-top: 0;
+    /*color: #1891d3;*/
+    font-size: 2em;
+}
+
+span#not-biggy {
+    font-size: 1.1em;
 }
 
